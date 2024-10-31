@@ -80,7 +80,6 @@ def chaos(n, frac, i):
     'gold', 'violet', 'silver', 'maroon'
 ]
 
-
     # Finding the i points
     for _ in range(i):
         # Selecting the random vertex and finding the vector to it
@@ -111,8 +110,8 @@ def chaos(n, frac, i):
     print('done')
 
 
-chaos(6,0.5,100000)
-# chaos(6,0.5,100000)
-# chaos(8,0.5,100000)
+chaos(4,0.5,100000) # Optimal 1/2
+# chaos(6,0.5,100000) # Optimal 1/2
+# chaos(8,0.5,100000) # Optimal 1/2
 # chaos(12,0.618,100000) # Optimal 1/phi = 0.618...
-# chaos(20,0.7236,100000) # dodec 0.618, 0.6935, 0.71 slightly more? Optimal (phi+1)/(phi+2) = 0.7236...
+# chaos(20,0.7236,100000) # Optimal (phi+1)/(phi+2) = 0.7236...
