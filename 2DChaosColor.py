@@ -22,8 +22,7 @@ def poly(n):
     elif n == 8:
         a = 1 + np.sqrt(2)
         vertices = np.array([[-1, -a], [1, -a], [-1, a], [1, a], [-a, -1], [a, -1], [-a, 1], [a, 1]])
-    elif n == 1:
-        vertices = np.array([[0,0], [1, 0], [1,0.5], [-0.3, 1.1], [0.2,0.7]])
+        
     return vertices
 
 def randpt():
@@ -76,4 +75,4 @@ def chaos(n, frac, i):
     print(f"d_m = {d_m}")
 
 # Running the Chaos Game for an n-gon (e.g., triangle) with 100,000 iterations
-chaos(1, 0.5, 100000)
+chaos(3, 0.5, 100000)
