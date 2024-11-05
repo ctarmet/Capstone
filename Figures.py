@@ -167,12 +167,15 @@ class Figure9(Scene):
         p1 = np.array([-2,-1,0])
         p2 = np.array([2,-1,0])
 
-        l1 = Line(start=p1, end=p2, color = BLUE_D, stroke_width = 7)
+        yellow_color = rgb_to_color([254, 204, 0])
+        blue_color = rgb_to_color([0, 106, 167])
+
+        l1 = Line(start=p1, end=p2, color = blue_color, stroke_width = 7)
 
         p3 = np.array([-2,1,0])
         p4 = np.array([0,1,0])
 
-        l2 = Line(start=p3, end=p4, color = YELLOW_B, stroke_width = 7)
+        l2 = Line(start=p3, end=p4, color = yellow_color, stroke_width = 7)
 
         p5 = np.array([0,-1,0]) # Middle bottom
 
@@ -205,12 +208,15 @@ class Figure10(Scene):
         p1 = np.array([-3,-1,0])
         p2 = np.array([3,-1,0])
 
-        l1 = Line(start=p1, end=p2, color = BLUE_D, stroke_width = 7)
+        yellow_color = rgb_to_color([254, 204, 0])
+        blue_color = rgb_to_color([0, 106, 167])
+
+        l1 = Line(start=p1, end=p2, color = blue_color, stroke_width = 7)
 
         p3 = np.array([-4,1,0])
         p4 = np.array([0,1,0])
 
-        l2 = Line(start=p3, end=p4, color = YELLOW_B, stroke_width = 7)
+        l2 = Line(start=p3, end=p4, color = yellow_color, stroke_width = 7)
 
         p5 = np.array([0,1,0]) # Middle top
         p6 = np.array([0,-1,0]) # Middle bottom

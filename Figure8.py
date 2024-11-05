@@ -23,7 +23,7 @@ def plot():
     plt.plot([vertices[2][0], vertices[3][0]], [vertices[2][1], vertices[3][1]], 'k-')
     plt.plot([vertices[3][0], vertices[4][0]], [vertices[3][1], vertices[4][1]], 'k-')
     plt.plot([vertices[0][0], vertices[4][0]], [vertices[0][1], vertices[4][1]], 'k-')
-    plt.plot([vertices[2][0], vertices[0][0]], [vertices[2][1], vertices[0][1]], color=(1.0, 0.9, 0.0), linestyle='-')
+    plt.plot([vertices[2][0], vertices[0][0]], [vertices[2][1], vertices[0][1]], color=(254 / 255, 204 / 255, 0 / 255), linestyle='-')
 
     plt.plot([vertices2[0][0], vertices2[1][0]], [vertices2[0][1], vertices2[1][1]], 'k-')
     plt.plot([vertices2[1][0], vertices2[2][0]], [vertices2[1][1], vertices2[2][1]], 'k-')
@@ -31,7 +31,7 @@ def plot():
     plt.plot([vertices2[3][0], vertices2[4][0]], [vertices2[3][1], vertices2[4][1]], 'k-')
     plt.plot([vertices2[0][0], vertices2[4][0]], [vertices2[0][1], vertices2[4][1]], 'k-')
 
-    plt.plot([vertices[3][0], vertices2[4][0]], [vertices[3][1], vertices2[4][1]], 'b-')
+    plt.plot([vertices[3][0], vertices2[4][0]], [vertices[3][1], vertices2[4][1]], color = (0 / 255, 106 / 255, 167 / 255), linestyle='-')
 
     plt.axis('equal')
     plt.axis('off')
