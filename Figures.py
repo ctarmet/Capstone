@@ -167,38 +167,35 @@ class Figure9(Scene):
         p1 = np.array([-2,-1,0])
         p2 = np.array([2,-1,0])
 
-        l1 = Line(start=p1, end=p2, color = BLACK)
+        l1 = Line(start=p1, end=p2, color = BLUE_D, stroke_width = 7)
 
         p3 = np.array([-2,1,0])
-        p4 = np.array([2,1,0])
+        p4 = np.array([0,1,0])
 
-        l2 = Line(start=p3, end=p4, color = BLACK)
+        l2 = Line(start=p3, end=p4, color = YELLOW_B, stroke_width = 7)
 
-        p5 = np.array([0,1,0]) # Middle top
-        p6 = np.array([0,-1,0]) # Middle bottom
+        p5 = np.array([0,-1,0]) # Middle bottom
 
         self.add(l1)
         self.add(l2)
 
         self.add(Dot(p1, color=BLACK), Dot(p2, color=BLACK), Dot(p3, color=BLACK), 
-                 Dot(p4, color=BLACK), Dot(p5, color=BLACK), Dot(p6, color=BLACK)) 
+                 Dot(p4, color=BLACK), Dot(p5, color=BLACK)) 
                  
         lab1 = MathTex("A").next_to(p1, DOWN)
-        lab2 = MathTex("B").next_to(p6, DOWN)
+        lab2 = MathTex("B").next_to(p5, DOWN)
         lab3 = MathTex("C").next_to(p2, DOWN)
         lab4 = MathTex("D").next_to(p4, UP)
-        lab5 = MathTex("E").next_to(p5, UP)
-        lab6 = MathTex("F").next_to(p3, UP)
+        lab5 = MathTex("E").next_to(p3, UP)
         
         lab1.color = BLACK
         lab2.color = BLACK
         lab3.color = BLACK
         lab4.color = BLACK
         lab5.color = BLACK
-        lab6.color = BLACK
         
 
-        self.add(lab1, lab2, lab3, lab4, lab5, lab6)
+        self.add(lab1, lab2, lab3, lab4, lab5)
 
 
 class Figure10(Scene):
@@ -208,12 +205,12 @@ class Figure10(Scene):
         p1 = np.array([-3,-1,0])
         p2 = np.array([3,-1,0])
 
-        l1 = Line(start=p1, end=p2, color = BLACK)
+        l1 = Line(start=p1, end=p2, color = BLUE_D, stroke_width = 7)
 
         p3 = np.array([-4,1,0])
         p4 = np.array([0,1,0])
 
-        l2 = Line(start=p3, end=p4, color = BLACK)
+        l2 = Line(start=p3, end=p4, color = YELLOW_B, stroke_width = 7)
 
         p5 = np.array([0,1,0]) # Middle top
         p6 = np.array([0,-1,0]) # Middle bottom
