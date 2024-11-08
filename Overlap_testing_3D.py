@@ -88,7 +88,7 @@ def overlap_test(n, r):
             vertex = vertices[i]
             xs.append(vertex[0])
             
-        # Since all polygons are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
+        # Since all polyhedra are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
         dm = max(xs) - min(xs)
 
         

@@ -85,7 +85,7 @@ def overlap_test(n, r):
             vertex = vertices[i]
             dim_4s.append(vertex[3])
             
-        # Since all polygons are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
+        # Since all polytopes are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
         dm = max(dim_4s) - min(dim_4s)
 
         
