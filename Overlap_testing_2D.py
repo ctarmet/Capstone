@@ -47,6 +47,7 @@ def affine(vertices, r, n):
     # Returns |V| sets of scaled coordinates. One set of |V| coordinates for each v_i in V
     return scaled_vertices
 
+
 def overlap_test(n, r):
     """Iteratively increase r until there is no overlap.
     If the x-coordinates are not close enough, iteratively decrese r until 
@@ -122,5 +123,6 @@ def overlap_test(n, r):
 def get_side_length(vertices):
     # Compute the side length of a polygon determined by it's vertices
      return np.linalg.norm(vertices[0] - vertices[1])
+
 
 overlap_test(6, 0.6)
