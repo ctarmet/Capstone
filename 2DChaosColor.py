@@ -1,7 +1,7 @@
 import numpy as np
 from random import random, randint
 import matplotlib.pyplot as plt
-from matplotlib import cm  # Updated colormap access
+from matplotlib import cm  
 
 def poly(n):
     # Find the vertices of an n-gon
