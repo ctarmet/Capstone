@@ -62,6 +62,7 @@ def randpt():
 
     return (x, y, z)
 
+
 def chaos(n, frac, i):
     # Finding the vertices of the polyhedron
     vertices = poly(n)
