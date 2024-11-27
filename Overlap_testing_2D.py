@@ -93,7 +93,7 @@ def overlap_test(n, r):
             xs.append(vertex[0])
             
         # Since all polygons are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
-        dm = max(xs) - min(xs)
+        delta_parallel = max(xs) - min(xs)
 
         
         # Check if overlap occurs
@@ -106,8 +106,8 @@ def overlap_test(n, r):
         elif abs(r1xmax - r2xmin) < 0.000001: # Accepted error. Will give at least 5 correct decimals
             print(f"Experimental Optimal Ratio Achieved\nr = {r}")
             # Print conjectured optimal ratio, dm, and edge length
-            print(f"Conjectured Optimal Ratio: {dm/(dm + original_side_length)}") 
-            print(f"dm = {dm}")
+            print(f"Conjectured Optimal Ratio: {delta_parallel/(delta_parallel + original_side_length)}") 
+            print(f"delta_parallel = {delta_parallel}")
             edgelength = get_side_length(vertices)
             print(f"Edge length = {edgelength}")
 

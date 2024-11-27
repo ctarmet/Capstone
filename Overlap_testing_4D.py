@@ -79,14 +79,14 @@ def overlap_test(n, r):
         r1max = max(region1_4D) # The largest 4D-value of the first region
         r2min = min(region2_4D) # The smallest 4D-value of the second region
 
-        # Calculate dm in conjectured ropt formula. Note that these are the original polytopes vertex-coordinates
+        # Calculate delta_parallel in conjectured ropt formula. Note that these are the original polytopes vertex-coordinates
         dim_4s = []
         for i in range(n):
             vertex = vertices[i]
             dim_4s.append(vertex[3])
             
         # Since all polytopes are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
-        dm = max(dim_4s) - min(dim_4s)
+        delta_parallel = max(dim_4s) - min(dim_4s)
 
         
         # Check if overlap occurs
@@ -98,12 +98,12 @@ def overlap_test(n, r):
 
         elif abs(r1max - r2min) < 0.000001: # Accepted error. Will give at least 5 correct decimals
             print(f"Experimental Optimal Ratio Achieved\nr = {r}")
-            # Print conjectured optimal ratio, dm, and edge length
-            print(f"Conjectured Optimal Ratio: {dm/(dm + original_side_length)}") 
-            print(f"dm = {dm}")
+            # Print conjectured optimal ratio, delta_parallel, and edge length
+            print(f"Conjectured Optimal Ratio: {delta_parallel/(delta_parallel + original_side_length)}") 
+            print(f"delta_parallel = {delta_parallel}")
             edgelength = get_side_length(vertices)
             print(f"Edge length = {edgelength}")
-            print(f"dm in terms of edge length: {dm/edgelength} * edgelength")
+            print(f"delta_parallel in terms of edge length: {delta_parallel/edgelength} * edgelength")
 
             return r
 

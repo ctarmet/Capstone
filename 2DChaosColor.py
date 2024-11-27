@@ -71,8 +71,7 @@ def chaos(n, frac, i):
     plt.axis('equal')
     plt.axis('off')
     plt.show()
-    d_m = vertices
-    print(f"d_m = {d_m}")
+    
 
 # Running the Chaos Game for an n-gon (e.g., triangle) with 100,000 iterations
 chaos(3, 0.5, 100000)

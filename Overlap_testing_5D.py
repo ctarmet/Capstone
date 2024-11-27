@@ -73,14 +73,14 @@ def overlap_test(n, r):
         r1max = max(region1_5D) # The largest 5D-value of the first region
         r2min = min(region2_5D) # The smallest 5D-value of the second region
 
-        # Calculate dm in conjectured ropt formula. Note that these are the original polytopes vertex-coordinates
+        # Calculate delta_parallel in conjectured ropt formula. Note that these are the original polytopes vertex-coordinates
         dim_5s = []
         for i in range(n):
             vertex = vertices[i]
             dim_5s.append(vertex[4])
             
         # Since all polytopes are oriented with the edge between vertices[0] and vertices[1] being parallel with the x-axis
-        dm = max(dim_5s) - min(dim_5s)
+        delta_parallel = max(dim_5s) - min(dim_5s)
 
         
         # Check if overlap occurs
@@ -92,10 +92,10 @@ def overlap_test(n, r):
 
         elif abs(r1max - r2min) < 0.000001: # Accepted error. Will give at least 5 correct decimals
             print(f"Experimental Optimal Ratio Achieved\nr = {r}")
-            # Print conjectured optimal ratio, and dm in terms of edge length
-            print(f"Conjectured Optimal Ratio: {dm/(dm + original_side_length)}")
+            # Print conjectured optimal ratio, and delta_parallel in terms of edge length
+            print(f"Conjectured Optimal Ratio: {delta_parallel/(delta_parallel + original_side_length)}")
             edgelength = get_side_length(vertices)
-            print(f"dm in terms of edge length: {dm/edgelength} * edgelength") 
+            print(f"delta_parallel in terms of edge length: {delta_parallel/edgelength} * edgelength") 
 
             return r
 

@@ -108,7 +108,7 @@ def chaos(n, frac, i):
 # Run the Chaos Game with the tetrahedron (4 vertices) and 100,000 iterations
 chaos(4, 0.5, 100000)
 # You can uncomment and run with other polyhedra
-# chaos(6, 0.5, 100000)
-# chaos(8, 0.5, 100000)
+# chaos(6, 0.5, 100000) # Octahedron
+# chaos(8, 0.5, 100000) # Cube
 # chaos(12, 0.618, 100000) # Optimal 1/phi = 0.618...
 # chaos(20, 0.7236, 100000) # dodecahedron with optimal ratio
