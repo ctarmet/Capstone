@@ -2,7 +2,7 @@
 ### Christoffer Tarmet
 
 ## ChaosColor programs
- Plays a GCG in 2- and 3-dimensional polygons and plots the result. At the bottom of the program, change the number of vertices of the polytope by changing the first argument. Change the ratio moved towards the randomly selected vertex by changing the second argument. Change the number of iterations by modifying the third argument. 
+ Plays a GCG in 2- and 3-dimensional polygons and plots the result. At the bottom of the program, change the number of vertices of the polytope by changing the first argument of the chaos function. Change the ratio moved towards the randomly selected vertex by changing the second argument. Change the number of iterations by modifying the third argument. 
 
 ## Figure8.py
 Creates Figure 8 in the paper.
