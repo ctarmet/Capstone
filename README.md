@@ -1,11 +1,8 @@
 # Polytope_GCG
 ### Christoffer Tarmet
 
-## 2DChaosColor.py
- Description:  Plays a GCG in 2-dimensional polygons and plots the result. At the bottom of the program, change the number of vertices of the polygon by changing the first argument. Change the ratio moved towards the randomly selected vertex by changing the second argument. Change the number of iterations by modifying the third argument. 
-
-## 3DChaosColor.py
-Description:  Plays a GCG in 3-dimensional polyhedra and plots the result. At the bottom of the program, change the number of vertices of the polyhedra by changing the first argument. Change the ratio moved towards the randomly selected vertex by changing the second argument. Change the number of iterations by modifying the third argument. 
+## ChaosColor programs
+ Description:  Plays a GCG in 2- and 3-dimensional polygons and plots the result. At the bottom of the program, change the number of vertices of the polytope by changing the first argument. Change the ratio moved towards the randomly selected vertex by changing the second argument. Change the number of iterations by modifying the third argument. 
 
 ## Figure8.py
 Creates Figure 8 in the paper.
